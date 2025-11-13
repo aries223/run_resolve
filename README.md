@@ -14,9 +14,9 @@ If anyone is interested, here is how I fixed the Resolve / Python issue:
 <br>
 
 ## First time installation of Resolve?
-If this is your first time installing Resolve, and assuming BlackMagic still is using the outdated libraries, you will need to do this:
+If this is your first time installing Resolve, and assuming BlackMagic still is using the outdated libraries, you will need to do this part. Skip this if Resolve is already installed.
 
-### 1. Bypass the zlib error
+### 1. Bypass the zlib error when installing
 
 ```bash
 sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve file name -i
