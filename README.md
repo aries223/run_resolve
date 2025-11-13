@@ -19,7 +19,7 @@ If this is your first time installing Resolve, and assuming BlackMagic still is 
 ### 1. Bypass the zlib error when installing
 
 ```bash
-sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve file name -i
+sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve_Install_File_Name -i
 ```
 
 ### 2. Move the outdated libs
