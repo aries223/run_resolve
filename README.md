@@ -3,8 +3,33 @@ Temp way to run Resolve until they fix it
 
 If anyone is interested, here is how I fixed the Resolve / Python issue:
 (I am on Fedora 43)
+<br>
+<br>
 
-## Install
+## Table of Contents
+1. First time installation of Resolve?
+2. Implement the Python workaround
+3. Remove after Resolve is fixed
+<br>
+<br>
+
+## First time installation of Resolve?
+If this is your first time installing Resolve, and assuming BlackMagic still is using the outdated libraries, you will need to do this:
+
+### 1. Bypass the zlib error
+
+```bash
+sudo SKIP_PACKAGE_CHECK=1 ./DaVinci_Resolve file name -i
+```
+
+### 2. Move the outdated libs
+```bash
+cd /opt/resolve/libs && sudo mkdir disabled-libraries && sudo mv libglib* libgio* libgmodule* disabled-libraries
+```
+<br>
+<br>
+
+## Implement the Python workaround
 
 ### 1. Move to your home directory:
 ```bash
@@ -56,7 +81,7 @@ Add:
 ```bash
 alias runresolve='/home/YOURHOMENSMEHERE/run_resolve.sh'
 ```
-(change 'YOURHOMENSMEHERE' to your home directory name)
+*(change 'YOURHOMENSMEHERE' to your home directory name)*
 ### 7. Reload your bashrc:
 ```bash
 source .bashrc
@@ -65,7 +90,8 @@ source .bashrc
 ```bash
 runresolve
 ```
-
+<br>
+<br>
 
 ## Remove after Resolve is fixed
 ### 1.Change to your home dir
