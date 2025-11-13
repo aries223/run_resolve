@@ -6,7 +6,7 @@ If anyone is interested, here is how I fixed the Resolve / Python issue:
 <br>
 <br>
 
-## Table of Contents
+# Table of Contents
 1. First time installation of Resolve?
 2. Implement the Python workaround
 3. Remove after Resolve is fixed
